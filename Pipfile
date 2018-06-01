@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+Django = "==2.0.5"
+django-webpack-loader = "*"
+python-decouple = "*"
+pathlib = "*"
+dj-database-url = "*"
+aiohttp-wsgi = "*"
+aiohttp-sse = "*"
+whitenoise = "*"
+django-favicon-plus = "*"
+
+[dev-packages]
+coverage = "==4.5.1"
+coveralls = "==1.3.0"
+django-nose = "==1.4.5"
+
+[requires]
+python_version = "3.6"

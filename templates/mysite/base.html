@@ -1,0 +1,14 @@
+{% load render_bundle from webpack_loader %}
+{% load favtags %}
+{% placeFavicon %}
+<html>
+  <body>
+    {% block content %}
+    {% endblock %}
+    {% if not DEBUG %}
+        {% render_bundle 'manifest' %}
+        {% render_bundle 'vendor' %}
+    {% endif %}
+    {% render_bundle 'app' %}
+  </body>
+</html>
