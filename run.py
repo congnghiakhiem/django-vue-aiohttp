@@ -9,7 +9,7 @@ from mysite.wsgi import application
 async def init_app():
     from myapp.events_handler import event_routes
     from myapp.websocket import ws_routes
-    
+
     wsgi_handler = WSGIHandler(application)
     app = web.Application()
 
